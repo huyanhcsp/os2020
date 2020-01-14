@@ -9,6 +9,6 @@ Students are expected to:
 Student Info
 =========================
 
-* Student Name: Nguyễn Huy An
-* Student ID: BI9-033
+* Student Name: Nguyễn Huy Anh
+* Student ID: BI9-038
 
