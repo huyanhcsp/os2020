@@ -1,0 +1,26 @@
+1 / Command: ps -aux | less 
+    Output: USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+	    root         1  0.1  0.1 119768  5964 ?        Ss   20:14   0:04 /sbin/init splash
+	    root         2  0.0  0.0      0     0 ?        S    20:14   0:00 [kthreadd]
+	    root         4  0.0  0.0      0     0 ?        I<   20:14   0:00 [kworker/0:0H]
+	    root         5  0.1  0.0      0     0 ?        I    20:14   0:02 [kworker/u8:0]
+	    root         6  0.0  0.0      0     0 ?        I<   20:14   0:00 [mm_percpu_wq]
+	    root         7  0.0  0.0      0     0 ?        S    20:14   0:00 [ksoftirqd/0]
+	    root         8  0.1  0.0      0     0 ?        I    20:14   0:03 [rcu_sched]
+	    root         9  0.0  0.0      0     0 ?        I    20:14   0:00 [rcu_bh]
+
+2/ Command: gnome-calculator
+   Output: open calculator 
+
+3/ Command: ps -aux | less | grep calculator
+   Output: cuu       4552  0.7  0.9 792724 35980 pts/2    Sl+  20:59   0:00 gnome-calculator
+	   cuu       4682  0.0  0.0  22820  1020 pts/18   S+   21:01   0:00 grep --color=auto 	  	     calculator
+
+4/ Command: kill -stop 4552
+
+5/ Command: kill -cont 4552
+
+6/ Command: kill -kill 4552
+
+
+
