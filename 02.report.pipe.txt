@@ -1,0 +1,22 @@
+1/ Command: ls | grep list
+   Output:
+
+2/ Command: wc -l /etc/passwd
+   Output: 41 /etc/passwd
+
+3/ Command: free
+   Output:  	      total        used        free      shared  buff/cache   available
+	  Mem:        3922904     1237720     1074828      581212     1610356     1829320
+	  Swap:        999420           0      999420
+
+4/ Command: cat /proc/cpuinfo | grep cpu | grep cores
+   Output: cpu cores	: 2
+	   cpu cores	: 2
+	   cpu cores	: 2
+	   cpu cores	: 2
+5/ Command: find . -type f -name "*.jpg" | wc -l 
+   Output: 55
+
+
+ 
+
