@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <unistd.h>
+
+int main() {
+	int n1 = fork();
+	int n2 = fork();
+ 	if(n1==0 && n2==0)
+		return 0;
+	else if(n1==0){
+		printf("I am a child after fork, launching ps -ef\n");
+		char *args[]= {"/bin/ps", "-ef", NULL};
+		execvp("/bin/ps", args);
+	}
+	else if(n2==0){
+		printf("I am child after fork(), launching free -h\n");
+		char *args[] = {"usr/bin/free", "-h", NULL};
+		execvp("/usr/bin/free", args);
+	}
+	else printf("I'm parent\n");
+	return 0;
+}
