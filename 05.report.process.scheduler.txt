@@ -1,0 +1,20 @@
+1/ Command: cat /proc/sched_debug | grep systemd
+   Output: S        systemd     1       501.548689      1850   120         0.000000      		3842.118951         0.000000 0 0 /autogroup-2
+ 	   Ssystemd-journal   285       218.846826       738   120         0.000000       		646.206316         0.000000 0 0 /autogroup-10
+ 	   Ssystemd-timesyn   749        23.711681        52   120         0.000000        		   59.970090         0.000000 0 0 /autogroup-35
+ 	   S        systemd  1374        22.316617        25   120         0.000000       		100.617564         0.000000 0 0 /autogroup-105
+ 	   S  systemd-udevd   313      1107.242386       710   120         0.000000       		589.889800         0.000000 0 0 /autogroup-16
+ 	   S systemd-logind   866        87.440086      1881   120         0.000000       		437.308209         0.000000 0 0 /autogroup-49
+
+2/ Command: ps -A | grep systemd
+   Output:  1 ?        00:00:03 systemd
+  	    285 ?        00:00:00 systemd-journal
+  	    313 ?        00:00:00 systemd-udevd
+  	    749 ?        00:00:00 systemd-timesyn
+  	    866 ?        00:00:00 systemd-logind
+ 	    1374 ?        00:00:00 systemd
+
+   Command: grep switches /proc
+   Output:  grep: /proc: Is a directory
+
+
