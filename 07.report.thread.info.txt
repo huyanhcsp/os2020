@@ -1,0 +1,17 @@
+1/ Command: ps -A | grep chrome
+   Output: 2247 ?        00:03:37 chrome
+ 	   2259 ?        00:00:00 chrome
+ 	   2263 ?        00:00:00 chrome
+ 	   2284 ?        00:06:32 chrome
+ 	   2287 ?        00:01:29 chrome
+	   2294 ?        00:00:00 chrome
+ 	   2405 ?        00:26:12 chrome
+ 	   2701 ?        00:00:23 chrome
+ 	   3055 ?        00:00:42 chrome
+ 	   3431 ?        00:00:18 chrome
+ 	   3475 ?        00:00:04 chrome
+ 	   3501 ?        00:00:00 chrome
+
+2/ Command:  ps -o nlwp 1885
+   Output: NLWP
+
